@@ -35,20 +35,20 @@ NOTE: A great doc for installing ruby and rails is at
 http://railsapps.github.io/installrubyonrails-ubuntu.html
 
 ### Copy down source
-1) Go to your top level development directory
-2) git clone git@github.com:/dsadaka/stats.git   # Clone this repository
+1) Go to your top level development directory<br />
+2) git clone git@github.com:/dsadaka/stats.git   # Clone this repository<br />
 
 ### Finish installation
-1) cd stats                                            # Clone command put source in stats subdir.  The gemset stats will get created if not already
-2) bundle install                                       # if you get any "could not find..." errors, just rm Gemfile.lock and try again
-3) rake db:migrate                                      # build tables
+1) cd stats             # Clone command put source in stats subdir.  The gemset stats will get created if not already<br />
+2) bundle install       # if you get any "could not find..." errors, just rm Gemfile.lock and try again<br />
+3) rake db:migrate      # build tables<br />
 
 
 #### Populate tables
-# Player Master table
-1) rake stats:import_master             # Empties Master and Imports Master-small.csv (for non-default usage, see below)
-# Batting stats
-2) rake stats:import_batting            # Empties Batting and Imports Batting-07-12.csv (for non-default usage, see below)
+##### Player Master table
+rake stats:import_master             # Empties Master and Imports Master-small.csv (for non-default usage, see below)
+##### Batting stats
+rake stats:import_batting            # Empties Batting and Imports Batting-07-12.csv (for non-default usage, see below)
 
 ### Display Stats
 rake stats:print
