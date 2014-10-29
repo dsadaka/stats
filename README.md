@@ -1,4 +1,4 @@
-Onlife
+Stats
 =========
 
 A small project that prints baseball statistics.
