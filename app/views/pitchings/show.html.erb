@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Playerid:</strong>
+  <%= @pitching.playerID %>
+</p>
+
+<p>
+  <strong>Yearid:</strong>
+  <%= @pitching.yearID %>
+</p>
+
+<p>
+  <strong>League:</strong>
+  <%= @pitching.league %>
+</p>
+
+<p>
+  <strong>Teamid:</strong>
+  <%= @pitching.teamID %>
+</p>
+
+<%= link_to 'Edit', edit_pitching_path(@pitching) %> |
+<%= link_to 'Back', pitchings_path %>

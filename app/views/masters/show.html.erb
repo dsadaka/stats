@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Playerid:</strong>
+  <%= @master.playerID %>
+</p>
+
+<p>
+  <strong>Birthyear:</strong>
+  <%= @master.birthYear %>
+</p>
+
+<p>
+  <strong>Namefirst:</strong>
+  <%= @master.nameFirst %>
+</p>
+
+<p>
+  <strong>Namelast:</strong>
+  <%= @master.nameLast %>
+</p>
+
+<%= link_to 'Edit', edit_master_path(@master) %> |
+<%= link_to 'Back', masters_path %>

@@ -1,0 +1,2 @@
+module BattingsHelper
+end

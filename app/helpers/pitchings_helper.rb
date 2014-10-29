@@ -1,0 +1,2 @@
+module PitchingsHelper
+end
