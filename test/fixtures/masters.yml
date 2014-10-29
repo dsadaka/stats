@@ -1,13 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  playerID: MyString
-  birthYear: 1
-  nameFirst: MyString
-  nameLast: MyString
-
-two:
-  playerID: MyString
-  birthYear: 1
-  nameFirst: MyString
-  nameLast: MyString
+<%
+  puts "Copying development database"
+  system("cp #{Rails.root.to_s}/db/development.sqlite3  #{Rails.root.to_s}/db/test.sqlite3")
+%>
