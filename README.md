@@ -50,8 +50,8 @@ rake stats:import_master             # Empties Master and Imports Master-small.c
 rake stats:import_batting            # Empties Batting and Imports Batting-07-12.csv (for non-default usage, see below)
 
 #### Run tests
-1) cp db/development.sqlite3 db/test.sqlite3  # Just use copy of development data since read-only
-2) rake test test/models/master_test.rb
+1) cp db/development.sqlite3 db/test.sqlite3  # Just use copy of development data since read-only<br />
+2) rake test test/models/master_test.rb<br />
 3) rake test test/models/batting_test.rb
 
 ### Display Stats
