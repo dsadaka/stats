@@ -42,13 +42,17 @@ http://railsapps.github.io/installrubyonrails-ubuntu.html
 1) cd stats             # Clone command put source in stats subdir.  The gemset stats will get created if not already<br />
 2) bundle install       # if you get any "could not find..." errors, just rm Gemfile.lock and try again<br />
 3) rake db:migrate      # build tables<br />
-4) cp db/development.sqlite3 db/test.sqlite3
 
 #### Populate tables
 ##### Player Master table
 rake stats:import_master             # Empties Master and Imports Master-small.csv (for non-default usage, see below)
 ##### Batting stats
 rake stats:import_batting            # Empties Batting and Imports Batting-07-12.csv (for non-default usage, see below)
+
+#### Run tests
+1) cp db/development.sqlite3 db/test.sqlite3  # Just use copy of development data since read-only
+2) rake test test/models/master_test.rb
+3) rake test test/models/batting_test.rb
 
 ### Display Stats
 rake stats:print
