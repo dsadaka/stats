@@ -42,7 +42,7 @@ http://railsapps.github.io/installrubyonrails-ubuntu.html
 1) cd stats             # Clone command put source in stats subdir.  The gemset stats will get created if not already<br />
 2) bundle install       # if you get any "could not find..." errors, just rm Gemfile.lock and try again<br />
 3) rake db:migrate      # build tables<br />
-
+4) cp db/development.sqlite3 db/test.sqlite3
 
 #### Populate tables
 ##### Player Master table
